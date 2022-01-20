@@ -1,5 +1,5 @@
 LINUX
-=======
+~~~~~~~~
 
 .. toctree::
    :maxdepth: 3
