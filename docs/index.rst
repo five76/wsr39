@@ -2,7 +2,7 @@ Network ans system administration
 ==================================
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 3
    :caption: Оглавление
 
    chapters/pm01/index.rst
