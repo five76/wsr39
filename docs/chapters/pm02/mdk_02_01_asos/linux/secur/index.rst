@@ -5,11 +5,7 @@
    :maxdepth: 3
    :caption: Оглавление
 
-   ssh/index.rst
-
-#chapters/01_algo/index.rst
-#chapters/02_langcpp/index.rst
-  
+   ssh/index.rst  
 
 Indices and tables
 ==================
