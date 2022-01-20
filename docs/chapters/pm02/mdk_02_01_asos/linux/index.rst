@@ -5,11 +5,7 @@ LINUX
    :maxdepth: 3
    :caption: Оглавление
 
-   secur/index.rst
-
-#chapters/01_algo/index.rst
-#chapters/02_langcpp/index.rst
-  
+   secur/index.rst  
 
 Indices and tables
 ==================
