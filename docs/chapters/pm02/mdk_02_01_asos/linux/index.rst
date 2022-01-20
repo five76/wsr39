@@ -2,7 +2,7 @@ LINUX
 =======
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 3
    :caption: Оглавление
 
    secur/index.rst
