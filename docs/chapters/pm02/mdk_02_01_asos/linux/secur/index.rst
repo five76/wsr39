@@ -2,7 +2,6 @@
 """"""""""""""""
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Оглавление
+   :maxdepth: 5
 
    ssh/index.rst
