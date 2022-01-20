@@ -2,7 +2,7 @@
 =============================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 5
    :caption: Оглавление
 
    linux/index.rst
