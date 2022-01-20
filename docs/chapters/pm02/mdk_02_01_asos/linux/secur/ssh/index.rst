@@ -1,5 +1,5 @@
 SSH
-''''
+======
 
 .. toctree::
    :maxdepth: 3
