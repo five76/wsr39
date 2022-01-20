@@ -6,10 +6,3 @@
    :caption: Оглавление
 
    linux/index.rst
-  
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
