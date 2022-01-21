@@ -4,4 +4,6 @@
 .. toctree::
    :maxdepth: 5
 
-   ssh/index.rst
+	ssh/index.rst
+	firewalld/index.rst
+	
