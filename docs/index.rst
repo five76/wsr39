@@ -5,10 +5,7 @@ Network ans system administration
    :maxdepth: 6
    :caption: Оглавление
 
-   chapters/pm01/index.rst
-   chapters/pm02/index.rst
-   chapters/pm03/index.rst
-   chapters/pm04/index.rst  
+   chapters/pm02/mdk_02_01_asos/index.rst 
 
 Indices and tables
 ==================
