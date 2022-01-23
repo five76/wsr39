@@ -21,3 +21,4 @@ https://ru.wikipedia.org/wiki/Nginx
    :maxdepth: 3
    
    nginx
+   nginx_proxy
