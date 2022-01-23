@@ -6,3 +6,4 @@ LINUX
    :caption: Оглавление
 
    secur/index.rst
+   web/index.rst
