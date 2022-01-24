@@ -22,4 +22,5 @@ https://ru.wikipedia.org/wiki/Nginx
    
    nginx
    nginx_proxy
+   nginx_apache
    source
