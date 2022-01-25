@@ -6,4 +6,5 @@
    
    ssh/index.rst
    firewalld/index.rst
+   cert/index.rst
 	
