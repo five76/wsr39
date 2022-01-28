@@ -19,3 +19,10 @@ https://hamsterden.ru/docker-compose-install-and-use/
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
 
 https://habr.com/ru/company/ruvds/blog/450312/
+
+Настройка среды разработки PHP с помощью Docker
+
+https://bestprogrammer.ru/programmirovanie-i-razrabotka/nastrojka-sredy-razrabotki-php-s-pomoshhyu-docker
+
+php + apache + nginx + mariadb + phpmyadmin
+https://er.mgimo.ru/sites/default/files/doc/docker03.pdf

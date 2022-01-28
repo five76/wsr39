@@ -265,8 +265,54 @@ https://docs.docker.com/engine/reference/builder/#from
 
 Docker позволяет получить доступ к какому-то из портов контейнера, пробросив его наружу (в основную операционную систему). По умолчанию, нет возможности получить доступ к каким-либо из портов контейнера. Однако, в Dockerfile опция EXPOSE позволяет объявить, к какому из портов можно обратиться из основной ОС.
 
+::
+
+        docker run -p <HOST_PORT>:<CONTAINER_PORT>
+
+Пример: 
+
+Создать образ для работы apache  с установленным php и зауспустить в контейнере. Обращение к apache из сети опеспечить через обращение к хостовой машине на порту 8080
+
+1. Создать и перейти в каталог html:
+
+::
+
+        mkdir html
+        cd html
+
+Создать индексный файл index.php:
+        
+::
+        
+        <?php
+                echo 'Hello from DOCKER-apache. We have PHP version = ' . phpversion() . PHP_EOL;
+        ?>
+        
 
 
+2.  Создать Dockerfile:
+
+::
+
+        FROM php:7.2-apache
+        WORKDIR /var/www/html
+        COPY . /var/www/html
+        #Прокинуть системный порт (Expose)
+        EXPOSE 80
+
+EXPOSE в Dockerfile разрешает подключение к 80 порту контейнера.
+
+3. Собрать обрз
+
+::
+
+        docker build . --tag own_php_apache
+
+4. Запустить контейнер
+
+::
+
+        docker run own_php_apache -p 80:80
 
 
 

@@ -61,6 +61,23 @@ Docker доступен для любой из операционных сист
        :align: center
        :alt: asda
 
+Установка Docker в качестве службы
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+        yum -y update && yum -y upgrade
+        curl -fsSL https://get.docker.com/ | sh
+        systemctl start docker
+        systemctl enable docker
+        systemctl status docker
+
+
+КОМАНДА CURL
+
+https://losst.ru/kak-polzovatsya-curl
+
+
 Версия docker
 
 ::
