@@ -14,7 +14,10 @@ https://vladilen.notion.site/Docker-2021-a72201ec8573461c8a2e62e2fcf33aa3
 
 **Docker-compose**
 
-https://hamsterden.ru/docker-compose-install-and-use/
+* Docker Compose: Установка и использование.
+
+        https://hamsterden.ru/docker-compose-install-and-use/
+
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
 

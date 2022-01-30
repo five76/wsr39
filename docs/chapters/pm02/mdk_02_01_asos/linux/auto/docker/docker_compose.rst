@@ -41,3 +41,14 @@ https://ru.wikipedia.org/wiki/YAML
                                 - 8080:80
                         volumes:
                                 - .:/var/www/html
+
+
+
+https://hamsterden.ru/docker-compose-install-and-use/
+
+Лабораторная работа
+~~~~~~~~~~~~~~~~~~~~
+
+Настроить веб-сервера nginx и apache на одном узле и функционирующих в разных контейнерах. Nginx выполняется прием запросов и обработку статических данных, динамический контент обрабатывается apache. 
+
+https://cloud.mail.ru/public/brSP%2FSvLPQu6tU
