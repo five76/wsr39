@@ -5,4 +5,3 @@
    :maxdepth: 5
    
    text/index.rst
-	
