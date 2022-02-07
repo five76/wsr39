@@ -22,10 +22,10 @@
 ::
 
         [centos]
-        192.168.20.10
+        192.168.20.10 
 
         [dbservers]
-        one.example.com
+        one.example.com 
         two.example.com
         three.example.com
 
@@ -225,6 +225,34 @@ SRV: Сервер ansible - компьютер с установленным ans
 	
 	ansible all -m ping
 
+При установке связи может возникнуть ошибка при поиске интерпретатора команд на узлах.
+
+Для устранения необходимо указать в инвентарном файле hosts:
+
+Для Debian:
+
+::
+
+        ansible_interpreter=/usr/bin/python
+        или
+        ansible_interpreter=/usr/bin/python3
+
+::
+
+        [debian]
+        5.5.5.2 ansible_interpreter =/usr/bin/python
+
+
+Для Centos:
+
+::
+
+        interpreter_python=/usr/libexec/platform/python
+
+Подробнее: 
+
+https://docs.ansible.com/ansible/latest/reference_appendices/interpreter_discovery.html
+
 
 **Модули Ansible: установка ПО**
 
@@ -276,7 +304,7 @@ SRV: Сервер ansible - компьютер с установленным ans
 		enablerepo: <Репозиторий>
 	Возможные состояния
 		absent - удален
-		installed - установлен
+		present - установлен
 		latest - обновлен
 		
 		
@@ -300,8 +328,7 @@ SRV: Сервер ansible - компьютер с установленным ans
 
 ::
 
-
-	ansible.builtin.systemd:
+        ansible.builtin.systemd:
 		name: <Имя службы>
 		state: <Состояние>
 		enabled: < yes | no >
