@@ -247,7 +247,17 @@ SRV: Сервер ansible - компьютер с установленным ans
 
 ::
 
-        interpreter_python=/usr/libexec/platform/python
+         ansible_interpreter=/usr/libexec/platform/python
+
+Для глобального использования необходимо в /etc/ansible/ansible.cfg указать параметр
+
+::
+
+        [defaults]
+        ...
+        interpreter_python=...
+
+        
 
 Подробнее: 
 
