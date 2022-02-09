@@ -7,4 +7,5 @@ LINUX
 
    secur/index.rst
    web/index.rst
+   routing/index.rst
    auto/index.rst
