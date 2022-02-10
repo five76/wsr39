@@ -1,8 +1,6 @@
 OSPF
 ======
 
-OSPF 
-
 .. toctree::
    :maxdepth: 3
 
