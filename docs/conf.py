@@ -63,10 +63,7 @@ html_theme_options = {
     "prev_next_buttons_location": "both",
     "navigation_with_keys": True,
     "top_of_page_button": None,
-    "announcement": (
-        'Книга не обновляется! Используется версия Ansible 2.9. '
-        '<a href="https://www.youtube.com/playlist?list=PLah0HUih_ZRnuI_K5-GV4FdAO9dVkRIGF">По некоторым темам есть видео лекции.</a>'
-    ),
+    
     "light_css_variables": {
         "color-brand-primary": "#336790",  # "blue"
         "color-brand-content": "#336790",
@@ -76,6 +73,14 @@ html_theme_options = {
         "color-brand-content": "#E5B62F",
     },
 }
+
+
+
+
+#"announcement": (
+#        'Книга не обновляется! Используется версия Ansible 2.9. '
+#        '<a href="https://www.youtube.com/playlist?list=PLah0HUih_ZRnuI_K5-GV4FdAO9dVkRIGF">По некоторым темам есть видео лекции.</a>'
+#    ),
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
