@@ -1,4 +1,4 @@
-Network ans system administration
+Сетевое и системное адмнистрирование
 #################################
 
 .. toctree::
