@@ -15,6 +15,6 @@ Ansible — система управления конфигурациями, н
 
    intro
    install
-   ssh
    continue1
+   ssh
    
