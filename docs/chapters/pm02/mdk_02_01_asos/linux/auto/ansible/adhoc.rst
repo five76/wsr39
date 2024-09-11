@@ -25,3 +25,45 @@ Ad-hoc команды - это возможность запустить как�
         192.168.0.11
 
 
+**Проверка связи:**
+
+::
+	
+	ansible all -m ping
+
+При установке связи может возникнуть ошибка при поиске интерпретатора команд на узлах.
+
+Для устранения необходимо указать в инвентарном файле hosts:
+
+Для Debian:
+
+::
+
+        ansible_interpreter=/usr/bin/python
+        или
+        ansible_interpreter=/usr/bin/python3
+
+::
+
+        [debian]
+        5.5.5.2 ansible_interpreter =/usr/bin/python
+
+
+Для Centos:
+
+::
+
+         ansible_interpreter=/usr/libexec/platform/python
+
+Для глобального использования необходимо в /etc/ansible/ansible.cfg указать параметр
+
+::
+
+        [defaults]
+        ...
+        interpreter_python=...
+      
+
+Подробнее: 
+
+https://docs.ansible.com/ansible/latest/reference_appendices/interpreter_discovery.html
