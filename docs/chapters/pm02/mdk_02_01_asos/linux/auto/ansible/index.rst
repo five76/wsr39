@@ -18,4 +18,5 @@ Ansible — система управления конфигурациями, н
    continue1
    ssh
    ansible_cfg
+   adhoc
    
