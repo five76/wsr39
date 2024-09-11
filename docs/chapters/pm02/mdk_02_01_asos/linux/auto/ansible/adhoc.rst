@@ -77,3 +77,5 @@ https://docs.ansible.com/ansible/latest/reference_appendices/interpreter_discove
 ::
 
 	$ ansible clients -a "/sbin/reboot"
+
+Больше команд и их описание можно найти в `документации <https://docs.ansible.com/ansible/latest/command_guide/intro_adhoc.html#why-use-ad-hoc-commands>`__.
