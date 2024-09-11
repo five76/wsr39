@@ -16,6 +16,14 @@ https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.ht
 Установка
 ~~~~~~~~~~
 
+On Alt
+''''''''''
+
+::
+
+        $ sudo apt-get update
+        $ sudo apt-get install ansible
+
 On Fedora
 ''''''''''
 
