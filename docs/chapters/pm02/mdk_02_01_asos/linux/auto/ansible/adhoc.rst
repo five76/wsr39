@@ -84,4 +84,4 @@ https://docs.ansible.com/ansible/latest/reference_appendices/interpreter_discove
 Задание:
 ~~~~~~~~
 
-Выполнить `примеры<https://www.linode.com/docs/guides/ansible-adhoc-commands>`__.
+Выполнить `примеры <https://www.linode.com/docs/guides/ansible-adhoc-commands>`__.
