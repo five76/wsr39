@@ -14,6 +14,7 @@ Ansible — система управления конфигурациями, н
    :maxdepth: 1
 
    intro
-   install   
+   install
+   ssh
    continue1
    
