@@ -17,4 +17,5 @@ Ansible — система управления конфигурациями, н
    install
    continue1
    ssh
+   ansible_cfg
    
