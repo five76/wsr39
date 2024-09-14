@@ -13,4 +13,10 @@ Ansible — система управления конфигурациями, н
 .. toctree::
    :maxdepth: 1
 
-   intro/index
+   intro
+   install
+   continue1
+   ssh
+   ansible_cfg
+   adhoc
+   

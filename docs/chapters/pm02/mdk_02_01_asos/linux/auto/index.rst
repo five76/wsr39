@@ -1,8 +1,7 @@
 Автоматизация
-""""""""""""""""
+~~~~~~~~~~~~~
 
 .. toctree::
-   :maxdepth: 5
-   
-   docker/index.rst
-   ansible/index.rst
+   :maxdepth: 1
+
+   ansible/index
