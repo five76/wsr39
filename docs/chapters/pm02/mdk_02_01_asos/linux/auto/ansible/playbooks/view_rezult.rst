@@ -38,3 +38,4 @@ debug
 		- debug: var=storage.stdout_lines
 		
 Обратите внимание, что выводится не всё содержимое переменной **storage**, а только содержимое **stdout_lines**
+
