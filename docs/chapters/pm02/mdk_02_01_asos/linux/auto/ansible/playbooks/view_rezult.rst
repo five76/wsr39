@@ -41,7 +41,13 @@ debug
 
 
 Задание:
-~~~~~~~~
+""""""""
+
+В данном задании необходимо будет выполнить примеры из раздела "Ansible Playbook для простых и повседневных задач".
+
+- Ansible установлен на BR-SRV - 192.168.0.2
+
+- Управляемые хосты: BR-RTR - 192.168.0.1, BR-CLI - 192.168.0.10  
 
 Выполнить `Ansible Playbook для простых и повседневных задач <https://vaiti.io/kak-ispolzovat-ansible-dlya-prostyh-i-slozhnyh-zadach>`__.
 

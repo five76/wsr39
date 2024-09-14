@@ -406,3 +406,46 @@ Continue
 	ansible-playbook variablesoft.yaml
 
 
+
+
+
+
+
+
+1 play: цель - web server
+2 play: цель - сервер баз данных
+
+::
+
+        ---
+        - name: Update web servers
+          hosts: webservers
+          remote_user: root
+
+          tasks:
+          - name: Ensure apache is at the latest version
+            ansible.builtin.yum:
+              name: httpd
+              state: latest
+          - name: Write the apache config file
+            ansible.builtin.template:
+              src: /srv/httpd.j2
+              dest: /etc/httpd.conf
+
+        - name: Update db servers
+          hosts: databases
+          remote_user: root
+
+          tasks:
+          - name: Ensure postgresql is at the latest version
+            ansible.builtin.yum:
+              name: postgresql
+              state: latest
+          - name: Ensure that postgresql is started
+            ansible.builtin.service:
+              name: postgresql
+              state: started
+
+
+
+Когда запускается здфнищщл, Ansible возвращает информацию о подключениях, строках имен всех ваших plays и задач, о том, была ли каждая задача выполнена успешно или неудачно на каждой машине, и внесла ли каждая задача изменения на каждой машине. В нижней части выполнения playbook Ansible предоставляет сводную информацию о целевых узлах и о том, как они выполнялись. Общие сбои и фатальные попытки “недоступной” связи хранятся отдельно в графах.
