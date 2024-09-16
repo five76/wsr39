@@ -40,5 +40,26 @@ Ansible использует переменные для управления р
   192.168.0.10
   
   [br_net:vars]
-  dns = 8.8.8.8
+  dns = 10.10.10.10
   log_server = 192.168.0.2
+
+Переменные **dns** и **log_server** можно применять в playbooks для всех устройств из группы **br_net**
+
+Имена переменных в playbook заключаются в двойные фигурные скобки **{{dns}}**
+
+Пример:
+"""""""
+Создать playbook для добавления dns сервера c IP адресом 10.10.10.10 на устройствах в сети br_net
+
+::
+- name: Set DNS-server
+  hosts: br_net
+
+  tasks: 
+    - name: insert line into resolv.conf
+      ansible.builtin.lineinfile:
+          path: /etc/resolv.conf
+          line: nameserver {{dns}}
+          state: present
+  
+  
