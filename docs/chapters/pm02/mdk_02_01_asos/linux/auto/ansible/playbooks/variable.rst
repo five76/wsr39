@@ -52,14 +52,15 @@ Ansible использует переменные для управления р
 Создать playbook для добавления dns сервера c IP адресом 10.10.10.10 на устройствах в сети br_net
 
 ::
-- name: Set DNS-server
-  hosts: br_net
 
-  tasks: 
-    - name: insert line into resolv.conf
-      ansible.builtin.lineinfile:
-          path: /etc/resolv.conf
-          line: nameserver {{dns}}
-          state: present
+    - name: Set DNS-server
+      hosts: br_net
+    
+      tasks: 
+        - name: insert line into resolv.conf
+          ansible.builtin.lineinfile:
+              path: /etc/resolv.conf
+              line: nameserver {{dns}}
+              state: present
   
   
