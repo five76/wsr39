@@ -8,4 +8,5 @@ Playbook - это файл, в котором описываются дейст�
 
    playbooks
    view_rezult
+   variable
    
