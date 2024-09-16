@@ -59,7 +59,7 @@ Playbooks с несколькими "plays" могут организовыва�
 
 ::
 
-	- name: first playbook
+	- name: First playbook
 	  host: localhost
 	  tasks:
 	  - name: Set a hostname
