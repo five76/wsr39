@@ -59,8 +59,11 @@ Playbooks с несколькими "plays" могут организовыва�
 
 ::
 
-	- name: Set a hostname
-  	  ansible.builtin.hostname:
+	- name: first playbook
+	  host: localhost
+	  tasks:
+	  - name: Set a hostname
+  	    ansible.builtin.hostname:
     		name: BR-SRV
 
 
