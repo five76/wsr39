@@ -266,4 +266,4 @@ group_vars/br_net.yml
 * переменные, которые передаются при вызове playbook через параметр --extra-vars
   (всегда наиболее приоритетные)
 
-`Более полный список в документации <https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#sts=Variable%20precedence:%20Where%20should%20I%20put%20a%20variable?%C2%B6>`__
+Дополнительные примеры и опсания находятся в `документации <https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#sts=Variable%20precedence:%20Where%20should%20I%20put%20a%20variable?%C2%B6>`__
