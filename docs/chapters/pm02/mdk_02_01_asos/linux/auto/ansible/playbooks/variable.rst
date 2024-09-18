@@ -104,34 +104,14 @@ Ansible использует переменные для управления р
 
 В Ansible используются циклы **loop**
 
-
-
 **Пример:**
 
-Установить на все хосты пакеты NetworkManager-tui, bind-utils, tcpdump
+Установить на все хосты пакеты NetworkManager-tui, bind-utils
 
-::
-
-    - name: Install packeges
-      hosts: all
-      vars:
-        install_packs:  #Создание массива
-           - NetworkManager
-           - bind-utils
-           - tcpdump
-    
-      tasks: 
-      - name: Print packs
-        debug:
-            msg: "{{install_packs}}"  # Вывод всего массива
-      - name: Install packs
-        ansible.builtin.package:
-           name: {{item}}           # установить очередной пакет из массива
-           state: present
-        loop:
-           {{install_packs}}        # брать по одному элементу из массива и передавать в task
-
+.. figure:: img/var_06.png
+       :scale: 100 %
+       :align: center
+       :alt:
 
 Директива **loop** выполняет итерацию по всему списку имен, определенных в цикле, и сохраняет каждое имя в переменной с именем **item**. Переменная ссылается на каждый из элементов в цикле. Таким образом, playbook устанавливает пакеты с меньшим количеством строк кода и позволяет избежать повторяющихся блоков кода.
-
 
