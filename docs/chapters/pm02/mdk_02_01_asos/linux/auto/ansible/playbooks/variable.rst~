@@ -152,7 +152,7 @@ Ansible использует переменные для управления р
 
     3)   Создать playbook insert_etc_hosts.yaml следующего содержания:
 
-.. figure:: img/var_07.png
+.. figure:: img/var_08.png
        :scale: 100 %
        :align: center
        :alt:
