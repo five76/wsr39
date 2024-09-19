@@ -10,4 +10,5 @@ Playbook - это файл, в котором описываются дейст�
    view_rezult
    variable
    example
+   tasks
    
