@@ -13,7 +13,7 @@
 без дополнительной аутентификации.
 
 
-Для работы будет использоваться модуль `ansible.builtin.user https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html`__
+Для работы будет использоваться модуль `ansible.builtin.user <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html>`__
 
 В документации указано, что парольнеобходимо указывать в хэшированном виде. Для этого потребуется пакет **mkpasswd**
 

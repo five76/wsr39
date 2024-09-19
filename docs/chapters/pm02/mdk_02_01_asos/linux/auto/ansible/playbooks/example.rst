@@ -23,7 +23,7 @@
 
 ::
 
-        pkpasswd --method=sha-512
+        mkpasswd --method=sha-512
         Password: P@ssw0rd
     
 
@@ -36,7 +36,7 @@
 
 ::
 
-        pkpasswd --method=sha-512 > user_pass.yaml
+        mkpasswd --method=sha-512 > user_pass.yaml
         Password: P@ssw0rd
 
 Файл **user_pass** необходимо привести к следующему виду:
