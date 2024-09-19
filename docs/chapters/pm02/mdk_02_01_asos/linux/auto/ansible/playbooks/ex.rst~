@@ -22,7 +22,7 @@
 
 - name: Add the user 'sshuser with a bash shell, appending the group 'admins' and 'developers' to the user's groups
   ansible.builtin.user:
-    name: james
+    name: sshuser
     password: P@ssw0rd
     uid: 1010
     shell: /bin/bash
