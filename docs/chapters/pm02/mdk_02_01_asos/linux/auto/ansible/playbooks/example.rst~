@@ -50,7 +50,7 @@
 Создать playbook **create_user.yaml**
 
 
-.. figure:: img/var_10.png
+.. figure:: img/var_11.png
        :scale: 100 %
        :align: center
        :alt:
