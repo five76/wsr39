@@ -7,7 +7,7 @@ Ansible взаимодействует с удаленными машинами 
 
 ::
 
-	vim /etc/ssh/sshd_config
+	vim /etc/openssh/sshd_config
 	Port 22
 	PermitRootLogin yes
 	PubkeyAuthentication yes
