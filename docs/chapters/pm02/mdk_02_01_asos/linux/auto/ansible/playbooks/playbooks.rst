@@ -60,7 +60,7 @@ Playbooks с несколькими "plays" могут организовыва�
 ::
 
 	- name: First playbook
-	  host: localhost
+	  hosts: localhost
 	  tasks:
 	  - name: Set a hostname
   	    ansible.builtin.hostname:
