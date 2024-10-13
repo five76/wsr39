@@ -8,4 +8,5 @@
    firewalld/index.rst
    cert/index.rst
    gre/index.rst
+   wireguard/index
 	
