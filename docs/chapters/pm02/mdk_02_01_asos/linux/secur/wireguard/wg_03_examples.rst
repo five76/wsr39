@@ -189,3 +189,105 @@ BR-RTR:
        :scale: 50 %
        :align: center
        :alt: asda
+
+1. Проверить настройки хоста OUT - CLI
+
+2. Установить необходимое программное обеспечение:
+
+.. code::
+
+	apt-get install wireguard-tools wireguard-tools-wg-quick kernel-source-wireguard
+	
+3. Создать каталог для ключей клиента (см. п.п. 2 - 4, Пример 1)
+
+4. В каталоге **/etc/wireguard** cоздать конфигурационный файл **wg0-client.conf** для клиента OUT-CLI:
+
+.. code::
+
+	cd /etc/wireguard
+	vim wg0-client.conf
+	
+.. code::
+	
+	[Interface]
+	PrivateKey = <ПРИВАТНЫЙ_КЛЮЧ_OUT-CLI>
+	Address = 172.16.10.10/32
+
+	[Peer]
+	PublicKey = <ПУБЛИЧНЫЙ_КЛЮЧ_BR-RTR>
+	AllowedIPs = 172.16.10.0/24, 192.168.0.0/24
+	Endpoint = 172.16.5.2:51820
+	PersistentKeepalive = 20
+
+* Address = 172.16.10.10/32 - IP адрес клиента в теннеле
+* AllowedIPs = 172.16.10.0/24, 192.168.0.0/24
+
+172.16.10.0/24 - сеть туннеля. Из этой сети *разрешать* доступ
+
+192.168.0.0/24 - Из этой сети *разрешать* доступ и пакеты, направляемые в эту сеть переждавать через туннель.
+
+* Endpoint = 172.16.5.2:51820 - ip адрес сервера VPN (BR-RTR)
+* PersistentKeepalive = 20 - каждые 2 секунд выполнять handshake для поддержания связи.
+
+
+5. На BR-RTR внести изменения в файл **wg-br.conf**
+
+Добавить в конец файла два раздела:
+
+.. code::
+
+	[Interface]
+	Address = 172.16.10.1/32
+	ListenPort = 51820
+	PrivateKey = <ПРИВАТНЫЙ_КЛЮЧ_BR-RTR>
+
+	[Peer]
+	PublicKey = <ПУБЛИЧНЫЙ_КЛЮЧ_OUT-CLI>
+	AllowedIPs = 172.16.10.10/32
+	PersistentKeepalive = 20
+	
+.. figure:: img/wg_0.png
+       :scale: 50 %
+       :align: center
+       :alt: asda	
+
+6. На обоих устройствах запустить туннель:
+
+BR-RTR:
+
+.. code::
+
+	wg-quick down wg-br
+	wg-quick up wg-br
+
+OUT-CLI:
+
+.. code::
+
+	wg-quick down wg0-client
+	wg-quick up wg0-client
+
+7. Проверить состояние туннеля:
+
+.. code::
+
+	wg
+	
+8. При отсутствии ошибок поставить туннели в автозапуск:
+
+OUT-CLI:
+
+.. code::
+
+	systemctl enable wg-quick@wg-hq.service
+	
+9. Можно с OUT-CLI получать доступ к инфраструктуре за BR-RTR:
+
+.. code::
+
+	ping 192.168.0.2
+	
+.. figure:: img/wg_06.png
+       :scale: 50 %
+       :align: center
+       :alt: asda	
