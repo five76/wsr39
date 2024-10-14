@@ -7,7 +7,7 @@
 Настроить между маршрутизаторами HQ-RTR и BR-RTR VPN туннель WireGuard. Адреса VPN - туннеля должны быть из сети 10.10.10.0/30 
 
 .. figure:: img/wg_00.png
-       :scale: 75 %
+       :scale: 50 %
        :align: center
        :alt: asda
 
@@ -118,7 +118,7 @@ BR-RTR:
 
 
 .. figure:: img/wg_01.png
-       :scale: 75 %
+       :scale: 50 %
        :align: center
        :alt: asda
 
@@ -134,7 +134,7 @@ BR-RTR:
 	wg
 	
 .. figure:: img/wg_02.png
-       :scale: 75 %
+       :scale: 50 %
        :align: center
        :alt: asda
 	   
@@ -144,7 +144,20 @@ BR-RTR:
 
 Если в процессе включения туннеля произошла ошибка, то достаточно перезагрузить сервер — активные туннели сбросятся.
 
-8. В случае отсутствия ошибок поставить туннели в автозапуск:
+
+8. Проверить сетевые интерфейсы
+
+..code::
+
+	ip a
+	
+.. figure:: img/wg_03.png
+       :scale: 50 %
+       :align: center
+       :alt: asda
+
+
+9. В случае отсутствия ошибок поставить туннели в автозапуск:
 
 HQ-RTR:
 
