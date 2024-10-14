@@ -95,3 +95,60 @@
 	Endpoint = 172.16.5.1:51820
 	PersistentKeepalive = 20
 	
+6. Поднять туннели на обоих серверах:
+
+HQ-RTR:
+
+.. code::
+
+	wg-quick up wg-hq
+
+BR-RTR:
+
+.. code::
+
+	wg-quick up wg-br
+
+
+.. figure:: img/wg_01.png
+       :scale: 50 %
+       :align: center
+       :alt: asda
+
+
+.. note:: **Примечание:** Выключить туннель можно командой: wg-quick down wg-hq
+
+
+	   
+7. Проверить активность туннелей командой **wg**:
+
+.. code::
+
+	wg
+	
+.. figure:: img/wg_02.png
+       :scale: 50 %
+       :align: center
+       :alt: asda
+	   
+Если присутствует "latest handshake:… seconds ago" и байты и в **received** и в **sent**, значит, все хорошо. 
+
+Если байты только в **sent**, без **handshake** и **received**, значит, где-то в конфигурационном файле ошибка или серверы недоступны друг для друга.
+
+Если в процессе включения туннеля произошла ошибка, то достаточно перезагрузить сервер — активные туннели сбросятся.
+
+8. В случае отсутствия ошибок поставить туннели в автозапуск:
+
+HQ-RTR:
+
+.. code::
+
+	systemctl enable wg-quick@wg-hq.service
+
+BR-RTR:
+
+.. code::
+
+	systemctl enable wg-quick@wg-br.service
+
+
