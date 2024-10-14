@@ -7,4 +7,6 @@ WireGuard
 .. toctree::
    :maxdepth: 3
 
-   01_wg_intro
+   wg_01_intro
+   wg_02_install
+   wg_03_examples
