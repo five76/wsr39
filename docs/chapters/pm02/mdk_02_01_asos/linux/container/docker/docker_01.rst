@@ -222,7 +222,7 @@ Dockerfile
 
 	vim index.py
 
-.. highlight:: python
+.. code:: python
 
 	print('Hello from Python in DOCKER!')
 
