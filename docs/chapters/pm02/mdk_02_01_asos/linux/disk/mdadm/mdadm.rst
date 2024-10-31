@@ -6,7 +6,7 @@
 RAID 5 используется при наличии минимум 3 дисков.
 
 .. figure:: img/mdadm_01.png
-       :scale: 50 %
+       :scale: 75%
        :align: center
        :alt: asda
 
@@ -103,7 +103,7 @@ Cистема задаст контрольный вопрос, необходи
 6. Найти информацию о том, что у дисков sdb, sdc, sdd появился раздел md0, например:
 
 .. figure:: img/mdadm_02.png
-       :scale: 50 %
+       :scale: 75%
        :align: center
        :alt: asda
 
@@ -125,7 +125,7 @@ Cистема задаст контрольный вопрос, необходи
 Пример содержимого:
 
 .. figure:: img/mdadm_02.png
-       :scale: 50 %
+       :scale: 75%
        :align: center
        :alt: asda
 
@@ -164,7 +164,7 @@ Cистема задаст контрольный вопрос, необходи
 	blkid
 
 .. figure:: img/mdadm_03.png
-   :scale: 50 %
+   :scale: 75%
    :align: center
    :alt: asda
 
@@ -177,7 +177,7 @@ Cистема задаст контрольный вопрос, необходи
 	vim /etc/fstab
 
 .. figure:: img/mdadm_04.png
-   :scale: 50 %
+   :scale: 75%
    :align: center
    :alt: asda
    
@@ -202,7 +202,7 @@ Cистема задаст контрольный вопрос, необходи
 	df -h
 
 .. figure:: img/mdadm_05.png
-   :scale: 50 %
+   :scale: 75%
    :align: center
    :alt: asda
 
@@ -218,7 +218,7 @@ Cистема задаст контрольный вопрос, необходи
 	cat /proc/mdstat
 	
 .. figure:: img/mdadm_06.png
-   :scale: 50 %
+   :scale: 75%
    :align: center
    :alt: asda
 
@@ -237,7 +237,7 @@ Cистема задаст контрольный вопрос, необходи
 	mdadm -D /dev/md0
 
 .. figure:: img/mdadm_07.png
-   :scale: 50 %
+   :scale: 75%
    :align: center
    :alt: asda
 
