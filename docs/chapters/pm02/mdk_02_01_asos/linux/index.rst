@@ -5,6 +5,7 @@ LINUX
    :maxdepth: 3
    :caption: Оглавление
 
+   disk/index.rst
    secur/index.rst
    web/index.rst
    routing/index.rst
