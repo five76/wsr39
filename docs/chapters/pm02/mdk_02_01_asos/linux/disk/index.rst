@@ -4,5 +4,6 @@
 .. toctree::
    :maxdepth: 5
    
-   raid/index.rst
+   raid/raid
+   mdadm/mdadm
 	
